@@ -32,7 +32,9 @@ const App = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch('/data/accessories.csv');
+        // Use dynamic base path - works for both local dev and GitHub Pages
+        const basePath = import.meta.env.BASE_URL || '/';
+        const response = await fetch(`${basePath}data/accessories.csv`);
         const csvText = await response.text();
         const parsedData = processCSV(csvText);
 

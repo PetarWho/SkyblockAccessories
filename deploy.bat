@@ -47,7 +47,7 @@ REM Build the project
 echo.
 echo Building the project...
 echo Running: npm run build
-echo Note: Building with base path '/SkyblockAccessories/' for GitHub Pages
+echo Note: Building with dynamic base path for GitHub Pages compatibility
 call npm run build
 if %errorlevel% neq 0 (
     echo.
