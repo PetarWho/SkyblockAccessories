@@ -31,6 +31,6 @@ export default defineConfig({
   },
   // Handle static assets
   publicDir: 'public',
-  // Ensure Vite uses the correct base URL
-  base: '/',
+  // Ensure Vite uses the correct base URL for GitHub Pages
+  base: '/SkyblockAccessories/',
 });
