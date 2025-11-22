@@ -1,0 +1,72 @@
+/* --- Global Theme: index.css --- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root theme */
+:root {
+  color-scheme: dark;
+  --accent: 168 85 247; /* violet-500 */
+  --accent-soft: 139 92 246; /* violet-400 */
+
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #0f0f14; /* deep gamer dark */
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Custom Select Dropdown Styles */
+select {
+  background-image: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* Fix focus states for form elements */
+input:focus,
+select:focus {
+  border-color: transparent !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px #7c3aed !important; /* violet-600 */
+}
+
+/* Style the dropdown options */
+select option {
+  background-color: #1e293b !important; /* slate-800 */
+  color: #e2e8f0 !important; /* slate-200 */
+  padding: 8px 12px !important;
+  border: none !important;
+}
+
+select option:hover,
+select option:checked {
+  background-color: #7c3aed !important; /* violet-600 */
+  color: white !important;
+}
+
+/* Remove default arrow in all browsers */
+select::-ms-expand {
+  display: none;
+}
+
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}

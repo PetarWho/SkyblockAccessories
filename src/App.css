@@ -1,0 +1,38 @@
+/* --- Subtle Gamer Theme: App.css --- */
+
+.logo {
+  height: 6rem;
+  padding: 1.5rem;
+  will-change: filter, transform;
+  transition: filter 300ms, transform 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.6rem rgba(168, 85, 247, 0.6)); /* violet-500 glow */
+  transform: translateY(-2px);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Only spin if user doesn't prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .logo.spin {
+    animation: logo-spin infinite 18s linear;
+  }
+}
+
+/* Optional card utility if still used */
+.card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(4px);
+}
